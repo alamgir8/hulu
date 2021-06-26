@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 import Result from "../components/Result";
 import requests from "./utils/requests";
 
-export default function Home({results}) {
+const Home = ({results}) => {
 
   return (
     <div>
@@ -21,6 +21,7 @@ export default function Home({results}) {
   );
 }
 
+export default Home;
 
 export const getServerSideProps = async (context) => {
   const genre = context.query.genre;
