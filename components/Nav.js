@@ -1,6 +1,6 @@
 import { useRouter } from "next/dist/client/router";
 import React from "react";
-import requests from "../pages/utils/requests";
+import requests from "../utils/requests";
 
 const Nav = () => {
     const router = useRouter();

@@ -1,6 +1,4 @@
-/* eslint-disable import/no-anonymous-default-export */
-const API_KEY=process.env.API_KEY;
-
+const API_KEY = process.env.API_KEY;
 
 const movieData = {
   Trending: {
@@ -48,5 +46,4 @@ const movieData = {
     url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`,
   },
 };
-
 export default movieData;

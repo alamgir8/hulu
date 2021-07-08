@@ -2,9 +2,10 @@ import Head from "next/head";
 import Header from "../Components/Header";
 import Nav from "../Components/Nav";
 import Result from "../Components/Result";
-import movieData from "./utils/requests";
+import movieData from "../utils/requests";
 
 const Home = ({ results }) => {
+  console.log(results);
   return (
     <div>
       <Head>
@@ -27,9 +28,9 @@ export const getServerSideProps = async (context) => {
 
   const request = await fetch(
     `https://api.themoviedb.org/3${
-      movieData[genre]?.url || movieData.fetchTrending.url
+      movieData[genre]?.url || movieData.Trending.url
     }`
-  ).then((res) => res.json());
+  ).then(res => res.json());
 
   return {
     props: {
