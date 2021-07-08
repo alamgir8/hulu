@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "../Components/Header";
-import Nav from "../Components/Nav";
-import Result from "../Components/Result";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import Result from "../components/Result";
 import movieData from "../utils/requests";
 
 const Home = ({ results }) => {
