@@ -23,7 +23,7 @@ const Header = () => {
         <HeaderItem title='ACCOUNT' Icon={UserIcon} />
       </div>
       <Head>
-        <title>This is Header</title>
+        <title>Home</title>
       </Head>
       <Image
         className="object-contain"
