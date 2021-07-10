@@ -5,7 +5,7 @@ import Result from "../components/Result";
 import movieData from "../utils/requests";
 
 const Home = ({ results }) => {
-  console.log(results);
+ 
   return (
     <div>
       <Head>
